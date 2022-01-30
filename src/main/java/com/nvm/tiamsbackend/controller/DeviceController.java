@@ -13,12 +13,12 @@ public class DeviceController {
     @Autowired
     private DeviceService deviceService;
 
-    @GetMapping("api/v1/device/{id}")
-    public Optional<Device> getDeviceById(@PathVariable("id") Long deviceId) {
+    @GetMapping("/device/{id}")
+    public Optional<Device> getDeviceById(@PathVariable("id") String deviceId) {
         return deviceService.getDeviceById(deviceId);
     }
 
-    @PostMapping("/api/v1/device/add")
+    @PostMapping("/device/add")
     public void addNewDevice(@RequestBody Device device) {
         deviceService.saveDevice(device);
     }

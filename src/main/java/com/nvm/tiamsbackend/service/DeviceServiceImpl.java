@@ -19,7 +19,7 @@ public class DeviceServiceImpl implements DeviceService{
     }
 
     @Override
-    public Optional<Device> getDeviceById(Long deviceId) {
+    public Optional<Device> getDeviceById(String deviceId) {
         return deviceRepository.findById(deviceId);
     }
 }

@@ -8,5 +8,5 @@ public interface DeviceService {
 
     void saveDevice(Device device);
 
-    Optional<Device> getDeviceById(Long deviceId);
+    Optional<Device> getDeviceById(String deviceId);
 }
