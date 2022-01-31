@@ -18,6 +18,7 @@ public class User {
     @Id
     private String id = Utils.generateId();
     private String userEmail;
+    private String userName;
     private String password;
     private boolean isActive = true;
     private String roles;
